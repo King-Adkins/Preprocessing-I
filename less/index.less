@@ -31,6 +31,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background-color: black;
+	color: white;
 }
 ol, ul {
 	list-style: none;
@@ -56,4 +58,166 @@ table {
 html, body {
     height: 100%;
 }
+
+// var
+
+@font-size: 2rem;
+@font-color: red;
+
+
+// mixins
+.column() {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.center() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+//header
+header {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 30px;
+	
+	nav {
+		margin-left: 330px;
+		font-size: 1.8rem;
+		justify-content: center;
+		background-color: red;
+		border: 2px solid lightslategray;
+		border-radius: 10px;
+		
+		a {
+			text-decoration: none;
+			color: white;
+			margin: 0 35px;
+		}
+
+	@media (max-width: 500px) {
+		
+	}
+
+		
+	}
+}
+
+//top-content
+.top-content {
+	.column();
+
+	.main-img {
+		padding-left: 390px;
+	}
+	.name {
+		padding-left: 315px;
+		font-size: 3.5rem;
+		color: @font-color;
+		
+	}
+}
+
+	.tag-line {
+		font-size: 1.5rem;
+		padding: 10px 0;
+	}
+
+	.team-work {
+		font-size: 1rem;
+	}
+
+	.btn {
+		.column();
+
+		.btn-style {
+			background-color: red;
+			border: 2px solid white;
+			margin: 0 10px 5px;
+			cursor: pointer;
+			width: 20%;
+			height: 45px;
+			font-size: @font-size;
+			border-radius: 10px;
+			color: white;
+		}
+}
+
+
+.left-side {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+
+	.left {
+		padding: 15px;
+		font-size: @font-size;
+		
+	}
+
+	.left-content {
+		font-size: 1.2rem;
+		padding-left: 15px;
+	}
+}
+
+.right-side {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	padding-left: 50px;
+
+	.right {
+		font-size: @font-size;
+	}
+	
+}
+
+.bottom-content {
+	display: flex;
+	flex-direction: column;
+
+
+	.table-title {
+		font-size: @font-size;
+	}
+
+	.table-content {
+
+	}
+
+	table, th, td {
+		border: 1px solid black;
+		border-collapse: collapse;
+	  }
+
+	  th, td {
+		padding: 15px;
+	  }
+
+	  th {
+		text-align: left;
+	  }
+
+	  table {
+		border-spacing: 5px;
+	  }
+}
+
+footer {
+	.center(); 
+}
+
+
+
+
+
+
+
+	
+	
+
 
