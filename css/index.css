@@ -158,6 +158,7 @@ header nav a {
 .top-content {
   display: flex;
   flex-direction: column;
+  background-color: grey;
 }
 .top-content .main-img {
   padding-left: 390px;
@@ -165,71 +166,88 @@ header nav a {
 .top-content .name {
   padding-left: 315px;
   font-size: 3.5rem;
-  color: red;
+  color: black;
 }
-.tag-line {
+.top-content .tag-line {
   font-size: 1.5rem;
-  padding: 10px 0;
+  padding-top: 15px;
+  padding-left: 530px;
 }
-.team-work {
+.top-content .team-work {
   font-size: 1rem;
+  padding-top: 15px;
+  padding-left: 285px;
 }
-.btn {
+.top-content .btn {
   display: flex;
   flex-direction: column;
+  padding-top: 15px;
 }
-.btn .btn-style {
+.top-content .btn .btn-style {
   background-color: red;
   border: 2px solid white;
-  margin: 0 10px 5px;
   cursor: pointer;
   width: 20%;
   height: 45px;
   font-size: 2rem;
   border-radius: 10px;
   color: white;
+  padding-left: 0px;
+  margin-left: 515px;
 }
-.left-side {
+.middle-content {
   display: flex;
-  flex-direction: column;
-  width: 30%;
 }
-.left-side .left {
+.middle-content .left-side {
+  width: 40%;
+  padding-top: 30px;
+  margin-left: 60px;
+  margin-bottom: 60px;
+}
+.middle-content .left-side .left {
   padding: 15px;
   font-size: 2rem;
 }
-.left-side .left-content {
+.middle-content .left-side .left-content {
   font-size: 1.2rem;
   padding-left: 15px;
 }
-.right-side {
-  display: flex;
-  flex-direction: column;
-  width: 30%;
-  padding-left: 50px;
+.middle-content .right-side {
+  width: 40%;
+  margin-top: 50px;
+  border-left-width: 0px;
+  padding-left: 210px;
 }
-.right-side .right {
+.middle-content .right-side .right {
   font-size: 2rem;
 }
 .bottom-content {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .bottom-content .table-title {
   font-size: 2rem;
 }
+.bottom-content .table-content {
+  margin-left: 60px;
+  margin-bottom: 30px;
+}
 .bottom-content table,
 .bottom-content th,
 .bottom-content td {
-  border: 1px solid black;
+  border: 2px solid lightslategray;
   border-collapse: collapse;
 }
 .bottom-content th,
 .bottom-content td {
   padding: 15px;
+  border: 2px solid red;
 }
 .bottom-content th {
   text-align: left;
+  border: 2px solid red;
+  background-color: grey;
 }
 .bottom-content table {
   border-spacing: 5px;
