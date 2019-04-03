@@ -31,6 +31,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background-color: black;
+	color: white;
 }
 ol, ul {
 	list-style: none;
@@ -56,4 +58,182 @@ table {
 html, body {
     height: 100%;
 }
+
+// var
+
+@font-size: 2rem;
+@font-color:white;
+
+
+// mixins
+.column() {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.center() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+//header
+header {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 30px;
+	
+	nav {
+		margin-left: 330px;
+		font-size: 1.8rem;
+		justify-content: center;
+		background-color: red;
+		border: 2px solid lightslategray;
+		border-radius: 10px;
+		
+		a {
+			text-decoration: none;
+			color: white;
+			margin: 0 35px;
+		}
+
+	@media (max-width: 500px) {
+		
+	}
+
+		
+	}
+}
+
+//top-content
+.top-content {
+	.column();
+	background-color: grey;
+
+	.main-img {
+		padding-left: 390px;
+	}
+	.name {
+		padding-left: 315px;
+		font-size: 3.5rem;
+		color: black;
+		}
+
+	.tag-line {
+		font-size: 1.5rem;
+		padding-top: 15px;
+		padding-left: 530px;
+	}
+
+	.team-work {
+		font-size: 1rem;
+		padding-top: 15px;
+		padding-left: 285px;
+	}
+
+	.btn {
+		.column();
+		padding-top: 15px;
+
+		.btn-style {
+			background-color: red;
+			border: 2px solid @font-color;
+			cursor: pointer;
+			width: 20%;
+			height: 45px;
+			font-size: @font-size;
+			border-radius: 10px;
+			color: @font-color;
+			padding-left: 0px;
+			margin-left: 515px;
+		}
+}
+}
+
+//middle-content
+.middle-content {
+	display: flex;
+	
+
+
+.left-side {
+	width: 40%;
+	padding-top: 30px;
+    margin-left: 60px;
+    margin-bottom: 60px;
+
+	.left {
+		padding: 15px;
+		font-size: @font-size;
+		
+	}
+
+	.left-content {
+		font-size: 1.2rem;
+		padding-left: 15px;
+	}
+}
+
+.right-side {
+	width: 40%;
+	margin-top: 50px;
+    border-left-width: 0px;
+    padding-left: 210px;
+
+	.right {
+		font-size: @font-size;
+	}
+}
+}
+
+//bottom-content
+.bottom-content {
+	.center();
+	
+	.table-title {
+		font-size: @font-size;
+	}
+
+	.table-content {
+		margin-left: 60px;
+		margin-bottom: 30px;
+	}
+
+	table, th, td {
+		border: 2px solid lightslategray;
+		border-collapse: collapse;
+	  }
+
+	  th, td {
+		padding: 15px;
+		border: 2px solid red;
+	  }
+
+	  th {
+		text-align: left;
+		border: 2px solid red;
+		background-color: grey;
+	  }
+
+	  
+
+	  table {
+		border-spacing: 5px;
+	  }
+}
+
+footer {
+	.center(); 
+}
+
+
+
+
+
+
+
+	
+	
+
 
